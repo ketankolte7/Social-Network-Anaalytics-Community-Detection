@@ -5,6 +5,11 @@ This project aims to detect communities within a social network using various co
 The goal of this project is to analyze the community structure within a social network and identify groups of individuals with similar connections, interests, or behaviors. By applying community detection algorithms, we aim to uncover the underlying community structure and gain insights into the network dynamics.
 
 ## Algorithms Implemented
+
+### The Clique Percolation Method (CPM)
+
+This network clustering algorithm that identifies clusters based on the formation of k-cliques, which are complete subgraphs of size k. In the CPM, nodes that share k-1 common neighbors are considered to be part of the same k-clique. The algorithm proceeds by first finding all k-cliques in the network and then constructing a graph where each k-clique is represented as a node. Edges are added between nodes that share k-1 common nodes, forming a cluster. The resulting clusters can overlap and are referred to as "k-plexes."
+
 ### Girvan-Newman Algorithm
 
 This algorithm identifies communities by iteratively removing edges with high betweenness centrality, which indicates their importance in connecting different communities.
